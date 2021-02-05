@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576224793464",
+    "project_id": "watsap-clone-1ce9f",
+    "storage_bucket": "watsap-clone-1ce9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576224793464:android:f9f9866658a679deaa2e8d",
+        "android_client_info": {
+          "package_name": "com.hammer67.watsappclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576224793464-h4neh0tel6ej9lldc35o8luin50arti9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXHKZRkLcECtDlQd3vUZH0Q9KOnQirfqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576224793464-h4neh0tel6ej9lldc35o8luin50arti9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_llamadas_info">Para llamar a contactos que tienen\nWatssApp,toca $ en la parte\n inferior de la pantalla</string>
+    <string name="txt_transition_name">imgUser</string>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true"
+    tools:context=".activities.fragments.AjustesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutDatosUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_person_grey"
+                android:transitionName="@string/txt_transition_name"
+                app:civ_border_color="@color/gph_dark_grey"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNombreUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Alfredo"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtEstadoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Programando..."
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="56dp"
+            android:background="@color/gph_dark_grey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteCuenta"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_cuenta"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Cuenta"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteChats"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_chat_grey"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Chats"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteNotificaciones"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_notifications"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Notificaciones"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteDatosAlmacenamiento"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_data"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Datos y Almacenamiento"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteAyuda"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_help"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Ayuda"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/gph_dark_grey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjusteInvitar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:drawableStart="@drawable/ic_baseline_people"
+            android:drawablePadding="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Invitar amigos"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

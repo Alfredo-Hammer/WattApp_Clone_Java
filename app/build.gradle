@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.hammer67.watsappclone"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libRSSupport.so'
+        pickFirst 'lib/arm64-v8a/libRSSupport.so'
+        pickFirst 'lib/x86_64/libRSSupport.so'
+        pickFirst 'lib/x86/libRSSupport.so'
+        pickFirst 'lib/arm64-v8a/librsjni.so'
+        pickFirst 'lib/x86/librsjni.so'
+        pickFirst 'lib/x86_64/librsjni.so'
+        pickFirst 'lib/armeabi-v7a/librsjni.so'
+        pickFirst 'lib/x86_64/librsjni_androidx.so'
+        pickFirst 'lib/armeabi-v7a/librsjni_androidx.so'
+        pickFirst 'lib/x86/librsjni_androidx.so'
+        pickFirst 'lib/arm64-v8a/librsjni_androidx.so'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //FILTROS
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.4'
+    //STORIES PROGRESS
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+    //CIRCULAR IMAGES
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //DOWNLOAD & CACHE IMAGES
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //CROP IMAGES
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    //giphy
+    implementation 'com.giphy.sdk:ui:1.2.8'
+    //ver pdf
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    // CameraX
+    implementation "androidx.camera:camera-camera2:1.1.0-alpha01"
+    implementation "androidx.camera:camera-lifecycle:1.1.0-alpha01"
+    implementation "androidx.camera:camera-view:1.0.0-alpha21"
+
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    implementation 'com.google.firebase:firebase-firestore:22.0.2'
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    
+}
+apply plugin: 'com.google.gms.google-services'

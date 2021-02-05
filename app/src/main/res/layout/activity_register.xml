@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.vistas.cuentas.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBackRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_circular"
+        android:src="@drawable/ic_baseline_arrow_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_person_grey"
+        app:civ_border_color="@color/gph_dark_grey"
+        app:civ_border_width="1dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtNombreRegistro"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_baseline_person_grey"
+        android:drawablePadding="10dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_txt"
+        android:hint="Nombre"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtCorreoRegistro"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_baseline_email"
+        android:drawablePadding="10dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_txt"
+        android:hint="Correo"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtContraseniaRegistro"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_baseline_lock"
+        android:drawablePadding="10dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_txt"
+        android:hint="Contraseña"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtConfContrasenia"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:drawableStart="@drawable/ic_baseline_lock"
+        android:drawablePadding="10dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_txt"
+        android:hint="Confirmar contraseña"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/selector_btn_entrar"
+        android:enabled="false"
+        android:text="Registrar"/>
+
+</LinearLayout>

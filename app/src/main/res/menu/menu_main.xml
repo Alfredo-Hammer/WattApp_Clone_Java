@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuBuscar"
+        android:icon="@drawable/ic_search"
+        android:title="Buscar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/ic_baseline_more"
+        android:title="Opciones"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/menuNuevoGrupo"
+                android:title="Nuevo Grupo" />
+            <item
+                android:id="@+id/menuNuevaDifusion"
+                android:title="Nueva difusion" />
+            <item
+                android:id="@+id/menuWatsAppWebb"
+                android:title="Watsapp Webb" />
+            <item
+                android:id="@+id/menuMensajesDestacados"
+                android:title="Mensajes destacados" />
+            <item
+                android:id="@+id/menuPrivacidadEstados"
+                android:title="Privacidad de estados" />
+            <item
+                android:id="@+id/menuAjutes"
+                android:title="Ajustes" />
+            <item
+                android:id="@+id/menuSalir"
+                android:title="Cerrar sesion" />
+
+        </menu>
+
+
+    </item>
+
+</menu>
